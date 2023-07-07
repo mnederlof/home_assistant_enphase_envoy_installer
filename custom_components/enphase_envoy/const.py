@@ -333,6 +333,11 @@ BINARY_SENSORS = (
         device_class=BinarySensorDeviceClass.POWER,
     ),
     BinarySensorEntityDescription(
+        key="relays_communicating",
+        name="Communicating",
+        device_class=BinarySensorDeviceClass.CONNECTIVITY,
+    ),
+    BinarySensorEntityDescription(
         key="firmware",
         name="Firmware",
         device_class=BinarySensorDeviceClass.UPDATE,
