@@ -67,6 +67,7 @@ SENSORS = (
         native_unit_of_measurement=UnitOfPower.WATT,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.POWER,
+        suggested_display_precision=0,
     ),
     SensorEntityDescription(
         key="daily_consumption",
@@ -161,6 +162,7 @@ PHASE_SENSORS = (
         native_unit_of_measurement=UnitOfPower.WATT,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.POWER,
+        suggested_display_precision=0,
     ),
     SensorEntityDescription(
         key="daily_production_l1",
@@ -189,6 +191,7 @@ PHASE_SENSORS = (
         native_unit_of_measurement=UnitOfPower.WATT,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.POWER,
+        suggested_display_precision=0,
     ),
     SensorEntityDescription(
         key="daily_production_l2",
@@ -217,6 +220,7 @@ PHASE_SENSORS = (
         native_unit_of_measurement=UnitOfPower.WATT,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.POWER,
+        suggested_display_precision=0,
     ),
     SensorEntityDescription(
         key="daily_production_l3",
@@ -245,6 +249,7 @@ PHASE_SENSORS = (
         native_unit_of_measurement=UnitOfPower.WATT,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.POWER,
+        suggested_display_precision=0,
     ),
     SensorEntityDescription(
         key="daily_consumption_l1",
@@ -266,6 +271,7 @@ PHASE_SENSORS = (
         native_unit_of_measurement=UnitOfPower.WATT,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.POWER,
+        suggested_display_precision=0,
     ),
     SensorEntityDescription(
         key="daily_consumption_l2",
@@ -287,6 +293,7 @@ PHASE_SENSORS = (
         native_unit_of_measurement=UnitOfPower.WATT,
         state_class=SensorStateClass.MEASUREMENT,
         device_class=SensorDeviceClass.POWER,
+        suggested_display_precision=0,
     ),
     SensorEntityDescription(
         key="daily_consumption_l3",
