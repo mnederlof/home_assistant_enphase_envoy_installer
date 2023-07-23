@@ -75,10 +75,12 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     )
     await envoy_reader._sync_store(load=True)
 
+    update_timeout = max(30, options.get("time_between_update", DEFAULT_SCAN_INTERVAL) - 1)
+
     async def async_update_data():
         """Fetch data from API endpoint."""
         data = {}
-        async with async_timeout.timeout(30):
+        async with async_timeout.timeout(update_timeout):
             try:
                 await envoy_reader.getData()
             except httpx.HTTPStatusError as err:
